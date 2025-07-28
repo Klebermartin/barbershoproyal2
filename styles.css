@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  background: white;
+  margin: 1em;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes spinFadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.logo-animado {
+  animation: spinFadeIn 1.2s ease-out forwards;
+}
+.logo:hover {
+  transform: rotate(5deg) scale(1.05);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.logo {
+  width: 120px;        /* Más pequeño (puedes ajustar a 100px o 80px si deseas) */
+  height: auto;
+  transition: transform 0.4s ease;
+}
